@@ -18,10 +18,25 @@ class manusia {
 public:
 	string jenisKelamin;
 
-	manusia(string pNama) : jenisKelamin(pNama) {
-		cout << "orang dibuat\n" << endl;
+	manusia(string pJenisKelamin) : jenisKelamin(pJenisKelamin) {
+		cout << "manusia dibuat\n" << endl;
 	}
 	~manusia() {
-		cout << "orang dihapus\n" << endl;
+		cout << "manusia dihapus\n" << endl;
+	}
+};
+
+class pelajar : private manusia, public orang {
+public:
+	string sekolah;
+
+	pelajar(string pNama, string pJenisKelamin, string pSekolah) : orang(pNama), manusia(pJenisKelamin) {
+		cout << "pelajar dibuat\n" << endl;
+	}
+	~pelajar() {
+		cout << "pelajar dihapus\n" << endl;
+	}
+	string perkenalan() {
+		return "Hallo, nama saya " + nama + " dengan jenis kelamin " + jenisKelamin + " dari sekolah " + sekolah + "\n\n";
 	}
 };
