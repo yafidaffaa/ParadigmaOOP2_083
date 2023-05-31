@@ -29,3 +29,16 @@ public:
 		cout << "Pesan dari lia" << endl;
 	}
 };
+
+int main() {
+	seseorang* orang;
+	joko a;
+	lia b;
+
+	orang = &a;
+	orang->pesan();
+	orang = &b;
+	orang->pesan();
+	//a.seseorang::pesan();
+	//b.seseorang::pesan();
+}
