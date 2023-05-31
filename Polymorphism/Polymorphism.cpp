@@ -41,4 +41,6 @@ int main() {
 	orang->pesan();
 	//a.seseorang::pesan();
 	//b.seseorang::pesan();
+
+	return 0;
 }
