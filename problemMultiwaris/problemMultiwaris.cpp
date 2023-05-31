@@ -12,7 +12,7 @@ public:
 };
 
 class pekerja : public orang {
-public:
+public: 
 	pekerja(int pUmur) : orang(pUmur) {
 		cout << "pekerja disebut\n" << endl;
 	}
